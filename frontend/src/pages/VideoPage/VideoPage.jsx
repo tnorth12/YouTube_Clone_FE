@@ -19,8 +19,8 @@ const VideoPage = (props) => {
 
   return (
     <div className="videoPlayer">
-      <iframe id="ytplayer" type="text/html" width="640" height="360"
-  src={`https://www.youtube.com/embed/${props.currentVideo}?autoplay=1&origin=http://example.com`}
+      <iframe id="youtubeplayer" type="text/html" width="640" height="360"
+  src={`https://www.youtube.com/embed/${props.currentVideo}?autoplay=1`}
   frameborder="0">    
   </iframe>
   <CommentForm currentVideo = {props.currentVideo} token = {props.token} />
