@@ -24,7 +24,6 @@ function App() {
 
   const [currentVideo, setCurrentVideo] = useState('rGfWMaZJR0I');
   console.log(currentVideo)
-
   return (
     <div>
       <Navbar />      
