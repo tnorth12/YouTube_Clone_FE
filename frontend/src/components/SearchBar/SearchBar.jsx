@@ -12,7 +12,7 @@ const handleSubmit = (event) => {
     
     <form className='search'>
         <div>
-            <input type="text" placeholder="What sounds good?" value={searchRequest} onChange={(event)=> setSearchRequest(event.target.value)} />
+            <input type="text" placeholder="Enter search here" value={searchRequest} onChange={(event)=> setSearchRequest(event.target.value)} />
         </div>
         <button className = 'buttonbutton' onClick={handleSubmit} type="submit">Search</button>
     </form>
