@@ -8,7 +8,6 @@ const ReplyForm = (props) => {
         event.preventDefault();
 
         let newComment = {
-
             text: comment,
             comment: props.comment.id,
         };
@@ -28,8 +27,7 @@ const ReplyForm = (props) => {
             setComment(response.data);
            } catch (error){
               console.log(error.message);
-            }
-        
+            }        
         };
     }
     return (
