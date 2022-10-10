@@ -1,6 +1,5 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
-import ReplyForm from '../ReplyForm/ReplyForm';
 import './CommentList.css';
 
 const CommentList = (props) => {
@@ -27,8 +26,7 @@ const CommentList = (props) => {
             {videoComment.map((videoComment, index)=> {
                 return (
                     <div>
-                        <p key={index} className='comment'>{videoComment.text}</p>
-                        <ReplyForm/>
+                        <p key={index} className='comment'>{videoComment.text}</p>                        
                         </div>
 
                 )

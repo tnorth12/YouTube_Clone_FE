@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import useAuth from "../../hooks/useAuth";
 import VideoPage from "../VideoPage/VideoPage";
-// import ReplyForm from "../../components/ReplyForm/ReplyForm";
 import './YouTubePage.css';
 
 
@@ -36,7 +35,7 @@ const YouTubePage = (props) => {
       {console.log('Test', props.currentVideo)}
       <h1 className = 'Header'>Enjoy the Vid!</h1>      
       <VideoPage currentVideo = {props.currentVideo} token = {token}/>  
-      {/* <ReplyForm user={user.username} currentVideo = {props.currentVideo} token = {token}/>   */}
+      
 
     </div>
   );
