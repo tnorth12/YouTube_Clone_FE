@@ -21,7 +21,9 @@ const CommentForm = (props) => {
     event.preventDefault();                             
     let newComment = {
       text: comment,
-      videoID: props.currentVideo,
+      video_id: props.currentVideo,
+      likes: 0,
+      dislikes: 0,
       
 
     };
@@ -32,7 +34,7 @@ const CommentForm = (props) => {
 
   async function addComment(newComment){
     try {
-      let response = await axios.post('http://127.0.0.1:8000/api/comment/', newComment,{
+      let response = await axios.post('http://127.0.0.1:8000/api/comment/all/', newComment,{
       headers: {
         Authorization: "Bearer " + props.token,
       },

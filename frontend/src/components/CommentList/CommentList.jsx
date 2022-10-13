@@ -20,9 +20,10 @@ const CommentList = (props) => {
 
 }, [])
   
+// cleanup comments here
     
     return (
-        <div className='displayCommentList'>
+        <div className='displayCommentList'>                                             
             {videoComment.map((videoComment, index)=> {
                 return (
                     <div>

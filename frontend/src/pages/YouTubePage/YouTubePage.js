@@ -13,23 +13,19 @@ const YouTubePage = (props) => {
   const [comment, setComment] = useState([]);
   
 
-  useEffect(() => {
-    const fetchComment = async () => {
-      try {
-        let response = await axios.get("http://127.0.0.1:8000/api/comment/", {
-          headers: {
-            Authorization: "Bearer " + token,
-          },
-        });
-        setComment(response.data);
-      } catch (error) {
-        console.log(error.message);
-      }
-    };
-    fetchComment();
-  }, [token]);
+  // useEffect(() => {
+  //   const fetchComment = async () => {
+  //     try {
+  //       let response = await axios.get('`http://127.0.0.1:8000/api/comment/${props.currentVideo}')        
+  //       setComment(response.data);
+  //     } catch (error) {
+  //       console.log(error.message);
+  //     }
+  //   };
+  //   fetchComment();
+  // }, []);
 
-  console.log(token)
+  // console.log(token)
   return (
     <div className="container">
       {console.log('Test', props.currentVideo)}
